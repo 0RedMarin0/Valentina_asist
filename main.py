@@ -153,7 +153,6 @@ class VTranslate_GUI(QMainWindow, Ui_VTranslate):
         msg.setInformativeText('Будет в следующем обновлении')
         msg.setWindowTitle("Не доступно")
         msg.exec_()
-        
 
 
 class Valentina_main(QtWidgets.QMainWindow, Val):

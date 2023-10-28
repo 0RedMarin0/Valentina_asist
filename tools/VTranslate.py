@@ -10,14 +10,13 @@ itranslate медленный, но рабочий, есть просечки
 from PyQt5 import QtCore, QtGui, QtWidgets
 import translators as ts
 from PIL import Image
-import pytesseract as pytes
 
 
-def photo_translate(dir_file):
-    img = Image.open(f"{dir_file}")
-    pytes.pytesseract.tesseract_cmd = r"tesseract\tesseract.exe"
-    text = pytes.image_to_string(img, lang='eng')
-    return text
+# def photo_translate(dir_file):
+#     img = Image.open(f"{dir_file}")
+#     pytes.pytesseract.tesseract_cmd = r"tesseract\tesseract.exe"
+#     text = pytes.image_to_string(img, lang='eng')
+#     return text
 
 
 def transla(text, a2='en', a3='ru', a1='bing'):
